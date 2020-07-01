@@ -80,13 +80,11 @@ brew cask install xquartz
 open -a xquart
 ```
 
-![images/xterm.png](images/xterm.png)
+![https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FdS2ZdE%2FbtqFjdlqFky%2FCmUflauc1LocKVS88J14Ak%2Fimg.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FdS2ZdE%2FbtqFjdlqFky%2FCmUflauc1LocKVS88J14Ak%2Fimg.png)
 
 해당 창이 표시되면 다음과 같이 환경설정에 진입하여 보안 탭을 다음과 같이 설정합니다. 환경설정은 cmd + , 키로도 진입 가능합니다.
 
-![images/xterm%20setting%201.png](images/xterm%20setting%201.png)
-
-![images/xterm%20setting%202.png](images/xterm%20setting%202.png)
+![https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Flj99x%2FbtqFhldE6QZ%2FpYgrJqsCxKoTOz6l201j61%2Fimg.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Flj99x%2FbtqFhldE6QZ%2FpYgrJqsCxKoTOz6l201j61%2Fimg.png) ![https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbDDuKE%2FbtqFgHO1Gna%2FDVAJER2PkYoun3Br1iGTc1%2Fimg.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbDDuKE%2FbtqFgHO1Gna%2FDVAJER2PkYoun3Br1iGTc1%2Fimg.png)
 
 터미널에서 아래 명령어를 입력합니다. 명령어는 해당 터미널에서 계속 실행 중이므로 새 터미널 창을 띄웁니다. 띄어쓰기 없습니다.
 
@@ -120,7 +118,7 @@ qtcreator
 
 다음과 같은 화면이 표시되면 성공한 것입니다.
 
-![images/qtcreator.png](images/qtcreator.png)
+![https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FyZ3Qy%2FbtqFjdTgShe%2FHEnOSEqcpOlsYTAF8cUEn1%2Fimg.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FyZ3Qy%2FbtqFjdTgShe%2FHEnOSEqcpOlsYTAF8cUEn1%2Fimg.png)
 
 가상 환경에서 나가기 위해선 `exit`을 사용하고, 컨테이너를 종료하려면 다음 명령어를 사용합니다.
 
