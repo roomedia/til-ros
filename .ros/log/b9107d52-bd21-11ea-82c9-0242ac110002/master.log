@@ -1,0 +1,19 @@
+[rosmaster.main][INFO] 2020-07-03 11:38:33,578: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2020-07-03 11:38:33,579: Starting ROS Master Node
+[xmlrpc][INFO] 2020-07-03 11:38:33,582: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2020-07-03 11:38:33,584: Started XML-RPC server [http://51113ca0c50b:11311/]
+[rosmaster.master][INFO] 2020-07-03 11:38:33,585: Master initialized: port[11311], uri[http://51113ca0c50b:11311/]
+[xmlrpc][INFO] 2020-07-03 11:38:33,586: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2020-07-03 11:38:33,630: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2020-07-03 11:38:33,640: +PARAM [/roslaunch/uris/host_51113ca0c50b__35105] by /roslaunch
+[rosmaster.master][INFO] 2020-07-03 11:38:33,741: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2020-07-03 11:38:33,742: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2020-07-03 11:38:33,760: +SERVICE [/rosout/get_loggers] /rosout http://51113ca0c50b:36737/
+[rosmaster.master][INFO] 2020-07-03 11:38:33,762: +SERVICE [/rosout/set_logger_level] /rosout http://51113ca0c50b:36737/
+[rosmaster.master][INFO] 2020-07-03 11:38:33,775: +PUB [/rosout_agg] /rosout http://51113ca0c50b:36737/
+[rosmaster.master][INFO] 2020-07-03 11:38:33,781: +SUB [/rosout] /rosout http://51113ca0c50b:36737/
+[rosmaster.master][INFO] 2020-07-03 11:38:39,436: +PUB [/rosout] /rviz_1593776319425130300 http://51113ca0c50b:44513/
+[rosmaster.master][INFO] 2020-07-03 11:38:39,437: +SERVICE [/rviz_1593776319425130300/get_loggers] /rviz_1593776319425130300 http://51113ca0c50b:44513/
+[rosmaster.master][INFO] 2020-07-03 11:38:39,439: +SERVICE [/rviz_1593776319425130300/set_logger_level] /rviz_1593776319425130300 http://51113ca0c50b:44513/
+[rosmaster.master][INFO] 2020-07-03 11:38:39,501: publisherUpdate[/rosout] -> http://51113ca0c50b:36737/ ['http://51113ca0c50b:44513/']
+[rosmaster.master][INFO] 2020-07-03 11:38:39,529: publisherUpdate[/rosout] -> http://51113ca0c50b:36737/ ['http://51113ca0c50b:44513/']: sec=0.03, result=[1, '', 0]

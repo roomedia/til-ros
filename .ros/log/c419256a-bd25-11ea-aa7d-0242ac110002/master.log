@@ -1,0 +1,29 @@
+[rosmaster.main][INFO] 2020-07-03 12:07:30,318: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2020-07-03 12:07:30,319: Starting ROS Master Node
+[xmlrpc][INFO] 2020-07-03 12:07:30,322: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2020-07-03 12:07:30,324: Started XML-RPC server [http://10da42646c06:11311/]
+[rosmaster.master][INFO] 2020-07-03 12:07:30,324: Master initialized: port[11311], uri[http://10da42646c06:11311/]
+[xmlrpc][INFO] 2020-07-03 12:07:30,327: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2020-07-03 12:07:30,368: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2020-07-03 12:07:30,373: +PARAM [/roslaunch/uris/host_10da42646c06__36561] by /roslaunch
+[rosmaster.master][INFO] 2020-07-03 12:07:30,566: +SERVICE [/rosout/get_loggers] /rosout http://10da42646c06:42391/
+[rosmaster.master][INFO] 2020-07-03 12:07:30,571: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2020-07-03 12:07:30,573: +SERVICE [/rosout/set_logger_level] /rosout http://10da42646c06:42391/
+[rosmaster.master][INFO] 2020-07-03 12:07:30,575: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2020-07-03 12:07:30,590: +PUB [/rosout_agg] /rosout http://10da42646c06:42391/
+[rosmaster.master][INFO] 2020-07-03 12:07:30,607: +SUB [/rosout] /rosout http://10da42646c06:42391/
+[rosmaster.master][INFO] 2020-07-03 12:07:56,332: +PUB [/rosout] /rviz_1593778076299563700 http://10da42646c06:41781/
+[rosmaster.master][INFO] 2020-07-03 12:07:56,348: +SERVICE [/rviz_1593778076299563700/get_loggers] /rviz_1593778076299563700 http://10da42646c06:41781/
+[rosmaster.master][INFO] 2020-07-03 12:07:56,354: +SERVICE [/rviz_1593778076299563700/set_logger_level] /rviz_1593778076299563700 http://10da42646c06:41781/
+[rosmaster.master][INFO] 2020-07-03 12:07:56,361: publisherUpdate[/rosout] -> http://10da42646c06:42391/ ['http://10da42646c06:41781/']
+[rosmaster.master][INFO] 2020-07-03 12:07:56,415: publisherUpdate[/rosout] -> http://10da42646c06:42391/ ['http://10da42646c06:41781/']: sec=0.05, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-03 12:09:03,714: +PUB [/rosout] /rviz_1593778143684200300 http://10da42646c06:38137/
+[rosmaster.master][INFO] 2020-07-03 12:09:03,719: +SERVICE [/rviz_1593778143684200300/get_loggers] /rviz_1593778143684200300 http://10da42646c06:38137/
+[rosmaster.master][INFO] 2020-07-03 12:09:03,723: +SERVICE [/rviz_1593778143684200300/set_logger_level] /rviz_1593778143684200300 http://10da42646c06:38137/
+[rosmaster.master][INFO] 2020-07-03 12:09:03,734: publisherUpdate[/rosout] -> http://10da42646c06:42391/ ['http://10da42646c06:41781/', 'http://10da42646c06:38137/']
+[rosmaster.master][INFO] 2020-07-03 12:09:03,770: publisherUpdate[/rosout] -> http://10da42646c06:42391/ ['http://10da42646c06:41781/', 'http://10da42646c06:38137/']: sec=0.03, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-03 12:21:36,349: +PUB [/rosout] /rviz_1593778896336426900 http://10da42646c06:38247/
+[rosmaster.master][INFO] 2020-07-03 12:21:36,349: publisherUpdate[/rosout] -> http://10da42646c06:42391/ ['http://10da42646c06:41781/', 'http://10da42646c06:38137/', 'http://10da42646c06:38247/']
+[rosmaster.master][INFO] 2020-07-03 12:21:36,354: +SERVICE [/rviz_1593778896336426900/get_loggers] /rviz_1593778896336426900 http://10da42646c06:38247/
+[rosmaster.master][INFO] 2020-07-03 12:21:36,357: publisherUpdate[/rosout] -> http://10da42646c06:42391/ ['http://10da42646c06:41781/', 'http://10da42646c06:38137/', 'http://10da42646c06:38247/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-03 12:21:36,360: +SERVICE [/rviz_1593778896336426900/set_logger_level] /rviz_1593778896336426900 http://10da42646c06:38247/

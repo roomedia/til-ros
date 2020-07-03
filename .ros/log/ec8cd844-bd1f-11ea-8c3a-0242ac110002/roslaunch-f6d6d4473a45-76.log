@@ -1,0 +1,58 @@
+[roslaunch][INFO] 2020-07-03 11:25:39,946: Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2020-07-03 11:25:39,968: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2020-07-03 11:25:39,970: roslaunch starting with args ['roscore', '--core']
+[roslaunch][INFO] 2020-07-03 11:25:39,973: roslaunch env is environ({'ROS_VERSION': '1', 'PKG_CONFIG_PATH': '/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'f6d6d4473a45', 'ROS_PACKAGE_PATH': '/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '', 'PWD': '/root/ros_ws/catkin_ws', 'XAUTHORITY': '/tmp/.docker.xauth', 'HOME': '/root', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'CMAKE_PREFIX_PATH': '/opt/ros/noetic', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'xterm', 'DISPLAY': '192.168.0.11:0', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://localhost:11311', 'LD_LIBRARY_PATH': '/opt/ros/noetic/lib', 'LC_ALL': 'C.UTF-8', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'OLDPWD': '/root/ros_ws', '_': '/opt/ros/noetic/bin/roscore', 'ROS_LOG_FILENAME': '/root/.ros/log/ec8cd844-bd1f-11ea-8c3a-0242ac110002/roslaunch-f6d6d4473a45-76.log'})
+[roslaunch][INFO] 2020-07-03 11:25:39,974: starting in server mode
+[roslaunch.parent][INFO] 2020-07-03 11:25:39,976: starting roslaunch parent run
+[roslaunch][INFO] 2020-07-03 11:25:39,979: loading roscore config file /opt/ros/noetic/etc/ros/roscore.xml
+[roslaunch][INFO] 2020-07-03 11:25:40,703: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.pmon][INFO] 2020-07-03 11:25:40,706: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2020-07-03 11:25:40,707: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2020-07-03 11:25:40,709: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2020-07-03 11:25:40,711: starting parent XML-RPC server
+[roslaunch.server][INFO] 2020-07-03 11:25:40,712: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2020-07-03 11:25:40,714: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2020-07-03 11:25:40,714: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-07-03 11:25:40,716: Started XML-RPC server [http://f6d6d4473a45:37899/]
+[xmlrpc][INFO] 2020-07-03 11:25:40,717: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2020-07-03 11:25:40,730: started roslaunch server http://f6d6d4473a45:37899/
+[roslaunch.parent][INFO] 2020-07-03 11:25:40,732: ... parent XML-RPC server started
+[roslaunch][INFO] 2020-07-03 11:25:40,739: master.is_running[http://f6d6d4473a45:11311/]
+[roslaunch][INFO] 2020-07-03 11:25:40,746: auto-starting new master
+[roslaunch][INFO] 2020-07-03 11:25:40,748: create_master_process: rosmaster, /opt/ros/noetic/share/ros, 11311, 3, None, False
+[roslaunch][INFO] 2020-07-03 11:25:40,749: process[master]: launching with args [['rosmaster', '--core', '-p', '11311', '-w', '3']]
+[roslaunch.pmon][INFO] 2020-07-03 11:25:40,751: ProcessMonitor.register[master]
+[roslaunch.pmon][INFO] 2020-07-03 11:25:40,752: ProcessMonitor.register[master] complete
+[roslaunch][INFO] 2020-07-03 11:25:40,753: process[master]: starting os process
+[roslaunch][INFO] 2020-07-03 11:25:40,758: process[master]: start w/ args [['rosmaster', '--core', '-p', '11311', '-w', '3', '__log:=/root/.ros/log/ec8cd844-bd1f-11ea-8c3a-0242ac110002/master.log']]
+[roslaunch][INFO] 2020-07-03 11:25:40,760: process[master]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2020-07-03 11:25:40,765: process[master]: started with pid [85]
+[roslaunch][INFO] 2020-07-03 11:25:40,769: master.is_running[http://f6d6d4473a45:11311/]
+[roslaunch][INFO] 2020-07-03 11:25:40,875: master.is_running[http://f6d6d4473a45:11311/]
+[roslaunch][INFO] 2020-07-03 11:25:40,977: master.is_running[http://f6d6d4473a45:11311/]
+[roslaunch][INFO] 2020-07-03 11:25:41,080: master.is_running[http://f6d6d4473a45:11311/]
+[roslaunch][INFO] 2020-07-03 11:25:41,086: master.is_running[http://f6d6d4473a45:11311/]
+[roslaunch][INFO] 2020-07-03 11:25:41,090: ROS_MASTER_URI=http://f6d6d4473a45:11311/
+[roslaunch][INFO] 2020-07-03 11:25:41,097: setting /run_id to ec8cd844-bd1f-11ea-8c3a-0242ac110002
+[roslaunch][INFO] 2020-07-03 11:25:41,105: setting /roslaunch/uris/host_f6d6d4473a45__37899' to http://f6d6d4473a45:37899/
+[roslaunch][INFO] 2020-07-03 11:25:41,112: ... preparing to launch node of type [rosout/rosout]
+[roslaunch][INFO] 2020-07-03 11:25:41,114: create_node_process: package[rosout] type[rosout] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://f6d6d4473a45:11311/]
+[roslaunch][INFO] 2020-07-03 11:25:41,115: process[rosout-1]: env[{'ROS_VERSION': '1', 'PKG_CONFIG_PATH': '/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': 'f6d6d4473a45', 'ROS_PACKAGE_PATH': '/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '', 'PWD': '/root/ros_ws/catkin_ws', 'XAUTHORITY': '/tmp/.docker.xauth', 'HOME': '/root', 'LANG': 'C.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'CMAKE_PREFIX_PATH': '/opt/ros/noetic', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'xterm', 'DISPLAY': '192.168.0.11:0', 'SHLVL': '0', 'ROS_MASTER_URI': 'http://f6d6d4473a45:11311/', 'LD_LIBRARY_PATH': '/opt/ros/noetic/lib', 'LC_ALL': 'C.UTF-8', 'PATH': '/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'OLDPWD': '/root/ros_ws', '_': '/opt/ros/noetic/bin/roscore', 'ROS_LOG_FILENAME': '/root/.ros/log/ec8cd844-bd1f-11ea-8c3a-0242ac110002/roslaunch-f6d6d4473a45-76.log'}]
+[roslaunch][INFO] 2020-07-03 11:25:41,156: process[rosout-1]: args[['/opt/ros/noetic/lib/rosout/rosout', '__name:=rosout']]
+[roslaunch][INFO] 2020-07-03 11:25:41,158: ... created process [rosout-1]
+[roslaunch.pmon][INFO] 2020-07-03 11:25:41,162: ProcessMonitor.register[rosout-1]
+[roslaunch.pmon][INFO] 2020-07-03 11:25:41,164: ProcessMonitor.register[rosout-1] complete
+[roslaunch][INFO] 2020-07-03 11:25:41,165: ... registered process [rosout-1]
+[roslaunch][INFO] 2020-07-03 11:25:41,166: process[rosout-1]: starting os process
+[roslaunch][INFO] 2020-07-03 11:25:41,175: process[rosout-1]: start w/ args [['/opt/ros/noetic/lib/rosout/rosout', '__name:=rosout', '__log:=/root/.ros/log/ec8cd844-bd1f-11ea-8c3a-0242ac110002/rosout-1.log']]
+[roslaunch][INFO] 2020-07-03 11:25:41,176: process[rosout-1]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2020-07-03 11:25:41,182: process[rosout-1]: started with pid [96]
+[roslaunch][INFO] 2020-07-03 11:25:41,185: ... successfully launched [rosout-1]
+[roslaunch][INFO] 2020-07-03 11:25:41,189: load_parameters starting ...
+[roslaunch][INFO] 2020-07-03 11:25:41,200: ... load_parameters complete
+[roslaunch][INFO] 2020-07-03 11:25:41,202: launch_nodes: launching local nodes ...
+[roslaunch][INFO] 2020-07-03 11:25:41,204: ... launch_nodes complete
+[roslaunch.pmon][INFO] 2020-07-03 11:25:41,205: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon 140712659490560)>
+[roslaunch.parent][INFO] 2020-07-03 11:25:41,207: ... roslaunch parent running, waiting for process exit
+[roslaunch][INFO] 2020-07-03 11:25:41,208: spin
