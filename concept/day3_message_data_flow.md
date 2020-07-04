@@ -51,4 +51,4 @@ geometry_msgs/PoseStamped goal_pose
 geometry_msgs/PoseStamped result_pose
 ---
 float32 percent_complete
-```
+```    
