@@ -5,6 +5,10 @@
 
 3일차 - [message data flow](concept/day3_message_data_flow.md)
 
-4일차-1 - [install ros in docker, ubuntu](install/day4_docker_install_ros_in_ubuntu.md)
+4일차_1 - [install ros in docker, ubuntu](install/day4_docker_install_ros_in_ubuntu.md)
 
-4일차-2 - [hello world pkg](example/day4_create_pkg.md)
+4일차_2 - [hello world pkg](example/day4_create_pkg.md)
+
+5일차 - [ROS command](concept/day5_ros_command.md)
+
+6일차 - [ROS tools](concept/day6_ros_tools.md)
