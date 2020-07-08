@@ -12,3 +12,7 @@
 5일차 - [ROS command](concept/day5_ros_command.md)
 
 6일차 - [ROS tools](concept/day6_ros_tools.md)
+
+7일차 - [USB Camera](install/day7_usb_camera.md)
+
+8일차 - [topic publish example](example/day8_ROS_topic_demo.md)
