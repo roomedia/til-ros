@@ -19,6 +19,7 @@ REP는 ROS 커뮤니티에서 유저들이 제안하는 규칙, 새로운 기능
 ## axes
 로봇의 회전 방향은 오른손 법칙을 따릅니다. 오른손으로 따봉을 했을 때 손가락이 감기는, 반시계 방향이 회전의 정방향(+)입니다.
 회전축은 아래 사진과 같이 손가락을 펼쳤을 때, 엄지가 Z축, 검지가 X축, 중지가 Y축이 됩니다.
+
 ![https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbrpAId%2FbtqFuhV5AG9%2FbdUvKEugrg3VmKSJprH0L1%2Fimg.jpg](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbrpAId%2FbtqFuhV5AG9%2FbdUvKEugrg3VmKSJprH0L1%2Fimg.jpg)
 ## style guide
 변수 이름을 명명할 때에도 규칙이 있습니다. 필수는 아니지만, 남의 코드를 이해할 때 도움이 됩니다.
@@ -44,6 +45,7 @@ REP는 ROS 커뮤니티에서 유저들이 제안하는 규칙, 새로운 기능
 catkin_create_pkg ros_tutorials_topic message_generation std_msgs roscpp
 ```
 다음과 같이 파일이 생성된 것을 볼 수 있습니다.
+
 ![https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FZ8sAx%2FbtqFtxyz04K%2FbNJjPNjhV4YokXdgxeSwE0%2Fimg.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FZ8sAx%2FbtqFtxyz04K%2FbNJjPNjhV4YokXdgxeSwE0%2Fimg.png)
 ## package.xml 수정
 ```xml
@@ -53,7 +55,9 @@ catkin_create_pkg ros_tutorials_topic message_generation std_msgs roscpp
   <version>0.0.1</version>
   <description>publish/subscribe topic</description>
   <license>Apache License 2.0</license>
+  <maintainer email="root@to.do">someone</maintainer>
 
+  <buildtool_depend>catkin</buildtool_depend>
   <build_depend>message_generation</build_depend>
   <build_depend>roscpp</build_depend>
   <build_depend>std_msgs</build_depend>
@@ -114,7 +118,7 @@ int32 sec과 int32 nsec으로 이루어진 time 형태의 stamp와 int32 형태�
 ```
 add_executable(topic_publisher src/publisher.cpp)
 ```
-CMake에서 선언한대로 `topic_publisher` 노드를 위한 코드 `publisher.cpp`를 작성합니다.
+`CMakeLists.txt`에서 선언한대로 `topic_publisher` 노드를 위한 코드 `publisher.cpp`를 작성합니다.
 ```
 #include "ros/ros.h"
 #include "ros_tutorials/MsgTutorial.h"
@@ -153,7 +157,7 @@ ROS 1에서는 `ros/ros.h`를 이용해 관련 함수를 포함하지만, ROS 2�
 ```
 add_executable(topic_subscriber src/subscriber.cpp)
 ```
-CMake에서 선언한대로 `topic_subscriber` 노드를 위한 코드 `subscriber.cpp`를 작성합니다.
+`CMakeLists.txt`에서 선언한대로 `topic_subscriber` 노드를 위한 코드 `subscriber.cpp`를 작성합니다.
 ```
 #include "ros/ros.h"
 #include "ros_tutorials/MsgTutorial.h"
@@ -182,10 +186,11 @@ int main(int argc, char** argv) {
 `catkin_ws`로 돌아와 `catkin_make` 명령어를 통해 패키지를 빌드합니다. 이후 아래 명령어를 실행하여 publisher/subscriber를 테스트합니다.
 ```
 # one shell
-rosrun ros_tutorials topic_publisher
+rosrun ros_tutorials_topic topic_publisher
 # another shell
-rosrun ros_tutorials topic_subscriber
+rosrun ros_tutorials_topic topic_subscriber
 ```
 아래와 같이 표시되어야 합니다.
+
 ![https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FDv3mC%2FbtqFt4P9Xhm%2FQw6LvxYvkzkxHNECOOXpo1%2Fimg.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FDv3mC%2FbtqFt4P9Xhm%2FQw6LvxYvkzkxHNECOOXpo1%2Fimg.png)
 ![https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fbf18Sy%2FbtqFvIE87uy%2FZUkeeaFQpHeXHZCgYhmDh1%2Fimg.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fbf18Sy%2FbtqFvIE87uy%2FZUkeeaFQpHeXHZCgYhmDh1%2Fimg.png)

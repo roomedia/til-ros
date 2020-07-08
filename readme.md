@@ -15,4 +15,6 @@
 
 7일차 - [USB Camera](install/day7_usb_camera.md)
 
-8일차 - [topic publish example](example/day8_ROS_topic_demo.md)
+8일차_1 - [topic publish/subscribe example](example/day8_ROS_topic_demo.md)
+
+8일차_2 - [service server/client example](example/day8_ROS_service_demo.md)
