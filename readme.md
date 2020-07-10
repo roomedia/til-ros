@@ -26,3 +26,5 @@
 9일차_3 - [roslaunch example](example/day9_ROS_launch_demo.md)
 
 9일차_4 - [robot, sensor, motor](concept/day9_robot_sensor_motor.md)
+
+10일차_1 - [ROS in Embedded Systems](concept/day10_ROS_in_Embedded_Systems.md)
