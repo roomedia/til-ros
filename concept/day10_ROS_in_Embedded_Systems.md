@@ -1,6 +1,6 @@
 [ROS 강의 Chapter9. 임베디드 시스템](https://www.youtube.com/watch?v=VKNVj9IDMeo&list=PLRG6WP3c31_VIFtFAxSke2NG_DumVZPgw&index=9)
 # 컴퓨터 자원의 종류와 ROS 지원
-![]()
+![https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FK1m7r%2FbtqFAghYkwE%2FjQFXIRY2pojViV9ft6ybik%2Fimg.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FK1m7r%2FbtqFAghYkwE%2FjQFXIRY2pojViV9ft6ybik%2Fimg.png)
 x86/64, ARM A-class는 ROS 설치가 가능하나, 펌웨어 레벨의 MCU는 ROS를 설치할 수 없습니다.
 
 ## ROS에서 임베디드 시스템
@@ -8,8 +8,7 @@ x86/64, ARM A-class는 ROS 설치가 가능하나, 펌웨어 레벨의 MCU는 RO
 - 그러나 실시간성 확보 및 하드웨어 제어를 위해서는 ROS가 설치된 PC와 임베디드 시스템 간의 연결이 요구됨
 - ROS에서는 이를 위해 `rosserial` 패키지를 제공합니다.
 
-![]()
-
+![https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbqUv89%2FbtqFyD6VpZB%2FVTkaZaAck98KzhEg2AC181%2Fimg.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbqUv89%2FbtqFyD6VpZB%2FVTkaZaAck98KzhEg2AC181%2Fimg.png)
 다이나믹셀, 센서 등에 연결된 OpenCR(ARM Cortex-M7)과 Raspberry Pi 3(ARM Cortex-A53)은 USB, serial을 통해 연결되며, Raspberry Pi에서는 ROS message을 사용할 수 있으나 OpenCR에서는 바로 사용할 수 없으며, 변환 작업을 수행하는 게 `rosserial` 패키지의 역할입니다.
 
 제어기 -> 시리얼(rosserial 프로토콜) -> PC(ROS message 형태로 수신)
@@ -66,8 +65,8 @@ rm -rf ros_lib # 기존 라이브러리를 갱신해야 하는 경우
 rosrun rosserial_arduino make_libraries.py .
 ```
 혹은 아두이노 라이브러리 관리를 통해 설치할 수도 있습니다.
-![]()
-![]()
+![https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FqoEt0%2FbtqFAeRZnC4%2FzJV6zr0dApjPRHsNG0d3hk%2Fimg.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FqoEt0%2FbtqFAeRZnC4%2FzJV6zr0dApjPRHsNG0d3hk%2Fimg.png)
+![https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FqffHI%2FbtqFyDsjWJ1%2Fsquv9alzrSfeP6KZtqKtgk%2Fimg.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FqffHI%2FbtqFyDsjWJ1%2Fsquv9alzrSfeP6KZtqKtgk%2Fimg.png)
 두 라이브러리 모두 ROS 기본 패키지의 메시지 파일을 포함하고 있지만, `make_libraries.py`를 통해 생성된 라이브러리는 개인이 작성한 메시지 파일까지 포함하고 있습니다.
 
 ## OpenCR
