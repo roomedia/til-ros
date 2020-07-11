@@ -1,0 +1,7 @@
+## ROS 1 설치
+여느때와 같이 ROS1을 설치하다 `E: Unable to correct problems, you have held broken packages.` 에러가 발생하였습니다. `apt-get install -f`나 `apt-get install --fix-broken` 등 온갖 걸 해도, `aptitude`를 설치하여 시도해봐도 안 되길래 누가 이기나 보자며 dependency를 모두 때려박았습니다. 중복된 패키지도 있겠지만, 중복 설치는 되지 않으니 필요없습니다. 어차피 한 번 설치하고 말 거 쉽게쉽게 갑시다..
+```
+sudo apt-get install ros-melodic-desktop-full ros-melodic-desktop ros-melodic-perception ros-melodic-simulators ros-melodic-urdf-sim-tutorial ros-melodic-viz ros-melodic-image-transport-plugins ros-melodic-perception-pcl ros-melodic-vision-opencv ros-melodic-rqt-common-plugins ros-melodic-gazebo-ros-pkgs ros-melodic-gazebo-dev ros-melodic-gazebo-plugins ros-melodic-gazebo-ros ros-melodic-compressed-depth-image-transport ros-melodic-compressed-image-transport  ros-melodic-theora-image-transport ros-melodic-image-pipeline ros-melodic-pcl-conversions ros-melodic-pcl-ros  ros-melodic-rqt-image-view  ros-melodic-gazebo-ros ros-melodic-gazebo-ros-control  ros-melodic-cv-bridge ros-melodic-image-geometry  libopencv-dev libgazebo9-dev  libopencv-dev libpcl-dev libopencv-calib3d-dev libopencv-features2d-dev libopencv-contrib-dev  libopencv-highgui-dev libopencv-objdetect-dev libopencv-stitching-dev libgdal-dev libtiff-dev  libvtk6-dev libvtk6-qt-dev libtiff5-dev  libjbig-dev libjbig0=2.1-3.1build1
+```
+설치가 됩니다.
+다른 패키지도 마찬가지로 Dependency로 나와있는 모든 패키지를 동시에 설치하면 될 것 같습니다. 시간을 얼마나 버린 건지 모르겠네요
