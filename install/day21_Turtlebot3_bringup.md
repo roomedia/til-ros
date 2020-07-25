@@ -111,21 +111,21 @@ rosrun rviz rviz -d "<full path to turtlebot3_description>/rviz/model.rviz"
 
 ![](https://emanual.robotis.com/assets/images/platform/turtlebot3/bringup/run_rviz.jpg)
 
-### 7.3.3 Turtlebot3에서 ROS\_MASTER\_URI에 접근하기
+### 7.3.3 Turtlebot3에서 ROS_MASTER_URI에 접근하기
 
-Remote PC에서 11311 포트를 개방하지 않고 위 예제를 구동하면 다음과 같은 에러가 발생합니다.
+Remote PC에서 Turtlebot PC에 대한 방화벽을 개방하지 않고 위 예제를 구동하면 다음과 같은 에러가 발생합니다.
 
 ```
 ERROR: unable to contact ROS master at [http://192.168.0.8:11311]
 The traceback for the exception was written to the log file
 ```
 
-우분투 환경을 사용하고 있다면, Remote PC에서 아래 명령어를 입력하여 포트 11311을 개방해줍니다.
+우분투 환경을 사용하고 있다면, Remote PC에서 아래 명령어를 입력하여 Turtlebot IP에 대한 접근을 허용합니다.
 
 ```
-sudo iptables -I INPUT 1 -p tcp --dport 11311 -j ACCEPT
+sudo ufw allow from 터틀봇_아이피_주소
 ```
 
-윈도우 환경이라면, 아래 게시글을 따라하시되 포트 80이 아닌, 포트 11311을 대상으로 진행하시면 됩니다.
+윈도우 환경이라면, 아래 게시글을 따라하시면 됩니다.
 
-[https://teachertri.tistory.com/51](https://teachertri.tistory.com/51)
+evohjo.wordpress.com/2019/10/04/windows10-specific-ip-only-firewall-allow-rule-create/
