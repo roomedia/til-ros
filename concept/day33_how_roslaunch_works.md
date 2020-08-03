@@ -27,12 +27,12 @@ roslaunch.main()
 
 http://docs.ros.org/hydro/api/roslaunch/html/roslaunch-module.html
 
-`main()` 함수에서 주어진 `.launch` 파일을 실행하는 부분은 다음과 같습니다.이
+`main()` 함수에서 주어진 `.launch` 파일을 실행하는 부분은 다음과 같습니다.
 
 ```py
 # __init__.py
 # ...
-def main(argv=sys.argv):행
+def main(argv=sys.argv):
     # ...
     from . import parent as roslaunch_parent 
     try: 
@@ -88,7 +88,7 @@ def main(argv=sys.argv):행
                 self.runner.pm.add_process_listener(l) 
 ```
 
-코드를 더 파봐도 를 지정하는 문구가 없길래, 혹시나 하는 마음에 `--screen` 옵션을 붙여 노드가 실행되며 발생하는 출력을 모두 화면에 표시해봤습니다.
+코드를 더 파봐도 실행 파일 타입을 지정하는 문구가 없길래, 혹시나 하는 마음에 `--screen` 옵션을 붙여 노드가 실행되며 발생하는 출력을 모두 화면에 표시해봤습니다.
 
 ```sh
 roslaunch delivery_nodejs union.launch --screen
@@ -121,4 +121,21 @@ pwd
 
 ![~/snap에서 실행한 경우](https://blog.kakaocdn.net/dn/vDXRt/btqGfttInYD/czViDVon2kFTaptAkrMikk/img.png)
 
-이는 `nodemon`이 기본 옵션으로 `bash`의 현재 경로를 감지 대상으로 두기 때문입니다. 따라서 shebang에서 이를 특정해주면 `roslaunch`를 사용하여도 변경 사항을 감지하여 재실행 할 수 있습니다.
+이는 `nodemon`에 별도의 옵션을 주지 않을 경우, 현재 작업 경로의 변경 사항을 감지하기 때문입니다. 따라서 이를 특정해주면 `roslaunch`를 사용하여도 변경 사항을 감지하여 재실행 할 수 있겠죠?
+
+...
+
+아쉽게도 `#!` 구문을 사용하면서 `nodemon`에 `--watch` 파라미터를 주는 방법은 없는 것 같습니다... 대신 `roslaunch`에서 `cwd`(current working directory) 구문을 이용하여 노드를 실행할 때의 작업 경로를 설정할 수 있었는데요! `cwd`를 설정하고 `--screen` 옵션을 붙이지 않아도 내용이 출력되도록 변경한 `union.launch` 파일은 다음과 같습니다.
+
+```xml
+<launch>
+  <group>
+    <node pkg="delivery_nodejs" type="app.js" name="menu_service_app" output="screen" cwd="node"/>
+    <node pkg="delivery_nodejs" type="server.js" name="menu_service_server" output="screen" cwd="node"/>
+  </group>
+</launch>
+```
+
+더욱 자세한 옵션은 아래 위키 페이지에서 확인할 수 있습니다.
+
+[http://wiki.ros.org/roslaunch/XML/node](http://wiki.ros.org/roslaunch/XML/node)
